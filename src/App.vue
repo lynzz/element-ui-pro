@@ -346,7 +346,6 @@ export default {
             // top: 0;
             i {
               font-size: 28px;
-              color: rgba(255, 255, 255, 0.7);
             }
           }
           &:hover {
