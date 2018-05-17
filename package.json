@@ -3,12 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "mock": "pm2 start mock --watch",
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "test": "vue-cli-service test",
-    "lint": "vue-cli-service lint"
+    "theme": "gulp theme && gulp copy",
+    "lint": "vue-cli-service lint --fix"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "^2.3.7",
+    "lodash": "^4.17.10",
+    "md5": "^2.2.1",
+    "moment": "^2.22.1",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -22,6 +29,13 @@
     "@vue/test-utils": "^1.0.0-beta.10",
     "babel-core": "^7.0.0-0",
     "babel-jest": "^22.0.4",
+    "element-theme": "^2.0.1",
+    "element-theme-chalk": "^2.3.7",
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "gulp-copy": "^1.1.0",
+    "gulp-replace": "^0.6.1",
+    "mockjs": "^1.0.1-beta3",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "vue-template-compiler": "^2.5.13"
